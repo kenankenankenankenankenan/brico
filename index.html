@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brico Weberei – Handgewebtes Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Brico Weberei</h1>
+    <p>Tradition trifft auf Design – Handgewebtes mit Seele</p>
+    <nav>
+      <a href="#ueber">Über uns</a>
+      <a href="#arbeiten">Arbeiten</a>
+      <a href="#kontakt">Kontakt</a>
+          <a href="#team">Team</a>
+      <a href="#preise">Preise</a>
+      <a href="#oeffnungszeiten">Öffnungszeiten</a>
+      <a href="#ideen">Ideen</a>
+</nav>
+  </header>
+  <div class="hero">
+    <img src="img/titelbild.jpg" alt="Titelbild Brico Weberei">
+  </div>
+
+
+  <section id="ueber">
+    <h2>Über uns</h2>
+    <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
+    <p>Die Brico Weberei ist ein Atelier für zeitgenössisches Handwerk. Seit 2014 entstehen bei uns nachhaltige Textilien in Kleinserien und Einzelstücken. Wir verbinden alte Webtechniken mit modernem Design – mit einem Fokus auf Naturmaterialien, Langlebigkeit und Ästhetik.</p>
+  </section>
+  <section id="ideen">
+    <h2>Ideen fürs Weben</h2>
+    <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
+    <ul>
+      <li>Leinen-Tischläufer mit Fischgrätmuster</li>
+      <li>Wollschals mit Farbverläufen</li>
+      <li>Wandbehänge aus recycelten Fasern</li>
+      <li>Küchentücher mit Blockstreifen</li>
+      <li>Webprojekte für Kinder oder Schulklassen</li>
+    </ul>
+  </section>
+
+
+  
+  
+  <section id="arbeiten">
+    <h2>Unsere Arbeiten</h2>
+    <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
+    <div class="gallery">
+      <img src="img/schal.jpg" alt="Handgewebter Schal">
+      <img src="img/teppich.jpg" alt="Gewebter Teppich">
+      <img src="img/webstuhl.jpg" alt="Webstuhl in Aktion">
+    </div>
+  </section>
+
+
+  <section id="team">
+    <h2>Unser Team</h2>
+    <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
+    <p>Hinter Brico Weberei steht ein kleines, engagiertes Team aus Textilgestalterinnen, Handwerker:innen und Designliebhabern. Gemeinsam bringen wir traditionelle Webkunst in die Gegenwart.</p>
+    <ul>
+      <li><strong>Clara Weber</strong> – Gründerin & Textildesignerin</li>
+      <li><strong>Mara Nyffeler</strong> – Pflanzenfärbung & Naturmaterialien</li>
+      <li><strong>Jana Keller</strong> – Werkstatt & Workshops</li>
+    </ul>
+    <div class="team-gallery">
+      <img src="img/clara.jpg" alt="Clara Weber">
+      <img src="img/mara.jpg" alt="Mara Nyffeler">
+    </div>
+  </section>
+
+
+  
+  
+  <section id="team"
+    <h2>Unser Team</h2>
+    <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
+    <p>Hinter Brico Weberei steht ein kleines, engagiertes Team aus Textilgestalterinnen, Handwerker:innen und Designliebhabern. Gemeinsam bringen wir traditionelle Webkunst in die Gegenwart.</p>
+    <ul>
+      <li><strong>Clara Weber</strong> – Gründerin & Textildesignerin</li>
+      <li><strong>Mara Nyffeler</strong> – Pflanzenfärbung & Naturmaterialien</li>
+      <li><strong>Jana Keller</strong> – Werkstatt & Workshops</li>
+    </ul>
+  </section>
+
+
+  <section id="preise">
+    <h2>Preise</h2>
+    <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
+    <p>Unsere Preise richten sich nach Aufwand, Material und Technik. Hier ein Überblick:</p>
+    <ul>
+      <li>Handgewebter Schal: ab CHF 80.–</li>
+      <li>Gewebter Wandbehang: ab CHF 150.–</li>
+      <li>Küchentücher im 2er-Set: CHF 40.–</li>
+      <li>Individuelle Auftragsarbeiten: auf Anfrage</li>
+    </ul>
+  </section>
+
+  <section id="oeffnungszeiten">
+    <h2>Öffnungszeiten</h2>
+    <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
+    <p>Besuche nach Vereinbarung oder zu folgenden Zeiten:</p>
+    <ul>
+      <li>Freitag: 14:00 – 18:00 Uhr</li>
+      <li>Samstag: 10:00 – 16:00 Uhr</li>
+      <li>oder nach Terminvereinbarung via E-Mail</li>
+    </ul>
+  </section>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
+    <p>Brico Weberei<br>
+    Webgasse 12<br>
+    3011 Bern<br>
+    E-Mail: <a href="mailto:info@brico.ch">info@brico.ch</a><br>
+    Instagram: <a href="#">@brico.weberei</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Brico Weberei – Alle Rechte vorbehalten</p>
+  </footer>
+
+
+let currentIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = slides.children.length;
+
+document.querySelector('.next').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateSlider();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  updateSlider();
+});
+
+function updateSlider() {
+  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+</body>
+</html>
