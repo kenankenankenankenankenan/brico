@@ -62,9 +62,8 @@
     <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
     <p>Hinter Brico Weberei steht ein kleines, engagiertes Team aus Textilgestalterinnen, Handwerker:innen und Designliebhabern. Gemeinsam bringen wir traditionelle Webkunst in die Gegenwart.</p>
     <ul>
-      <li><strong>Clara Weber</strong> – Gründerin & Textildesignerin</li>
-      <li><strong>Mara Nyffeler</strong> – Pflanzenfärbung & Naturmaterialien</li>
-      <li><strong>Jana Keller</strong> – Werkstatt & Workshops</li>
+      <li><strong>Brigitte Damdhül</strong> 
+      <li><strong>Corinna Tomasi</strong>
     </ul>
     <div class="team-gallery">
       <img src="img/clara.jpg" alt="Clara Weber">
@@ -73,74 +72,40 @@
   </section>
 
 
-  
-  
-  <section id="team"
-    <h2>Unser Team</h2>
-    <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
-    <p>Hinter Brico Weberei steht ein kleines, engagiertes Team aus Textilgestalterinnen, Handwerker:innen und Designliebhabern. Gemeinsam bringen wir traditionelle Webkunst in die Gegenwart.</p>
-    <ul>
-      <li><strong>Clara Weber</strong> – Gründerin & Textildesignerin</li>
-      <li><strong>Mara Nyffeler</strong> – Pflanzenfärbung & Naturmaterialien</li>
-      <li><strong>Jana Keller</strong> – Werkstatt & Workshops</li>
-    </ul>
-  </section>
 
 
   <section id="preise">
     <h2>Preise</h2>
     <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
-    <p>Unsere Preise richten sich nach Aufwand, Material und Technik. Hier ein Überblick:</p>
+    <p>Kosten für Infrastruktur, Untersützung und Ideenaustausch:</p>
     <ul>
-      <li>Handgewebter Schal: ab CHF 80.–</li>
-      <li>Gewebter Wandbehang: ab CHF 150.–</li>
-      <li>Küchentücher im 2er-Set: CHF 40.–</li>
+      <li>Halber Tag (4Stufen) CHF 30.-</li>
+      <li>Einzelstunden CHF 10.-</li>
+      <li>Zusätzlich Materialkosten</li>
       <li>Individuelle Auftragsarbeiten: auf Anfrage</li>
     </ul>
   </section>
 
   <section id="oeffnungszeiten">
     <h2>Öffnungszeiten</h2>
-    <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
     <p>Besuche nach Vereinbarung oder zu folgenden Zeiten:</p>
     <ul>
-      <li>Freitag: 14:00 – 18:00 Uhr</li>
-      <li>Samstag: 10:00 – 16:00 Uhr</li>
-      <li>oder nach Terminvereinbarung via E-Mail</li>
+      <li>Montag: 13:00 - 17:00 Uhr</li>
+      <li>oder nach Vereinbarung</li>
     </ul>
   </section>
 
 <section id="kontakt">
     <h2>Kontakt</h2>
     <p class="intro">[Einleitungstext zu diesem Abschnitt]</p>
-    <p>Brico Weberei<br>
-    Webgasse 12<br>
-    3011 Bern<br>
-    E-Mail: <a href="mailto:info@brico.ch">info@brico.ch</a><br>
-    Instagram: <a href="#">@brico.weberei</a></p>
+    <p>BRICO<br>
+    Dorfstrasse 31b<br>
+    9248 Bichwil<br>
+    E-Mail: <a href="mailto:bddamdhuel@gmx.ch">bddamdhuel@gmx.ch</a><br>
   </section>
 
   <footer>
-    <p>&copy; 2025 Brico Weberei – Alle Rechte vorbehalten</p>
+    <p>&copy; 2025 BRICO – Alle Rechte vorbehalten</p>
   </footer>
-
-
-let currentIndex = 0;
-const slides = document.querySelector('.slides');
-const totalSlides = slides.children.length;
-
-document.querySelector('.next').addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % totalSlides;
-  updateSlider();
-});
-
-document.querySelector('.prev').addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-  updateSlider();
-});
-
-function updateSlider() {
-  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
 </body>
 </html>
