@@ -55,7 +55,7 @@ section:nth-of-type(even) {
 }
 
 section + section {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .gallery {
