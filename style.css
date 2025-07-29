@@ -103,3 +103,16 @@ footer {
   margin-top: -10px;
   margin-bottom: 30px;
 }
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px; /* oder 40px – passe je nach Logo an */
+  width: auto;
+}
