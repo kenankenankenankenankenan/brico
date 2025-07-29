@@ -113,3 +113,24 @@ header .logo-title .logo {
   height: 3em !important;  /* exakt so hoch wie das H1 (3em) */
   width: auto !important;  /* Seitenverhältnis bewahren */
 }
+
+/* ganz am Ende Deiner style.css */
+
+header .logo-title h1 {
+  margin: 0;
+  /* sorgt dafür, dass die Zeilenhöhe = Font-Size wird */
+  line-height: 1;
+}
+
+/* falls Du es noch nicht hast: */
+header .logo-title {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  flex-wrap: nowrap;
+}
+
+header .logo-title .logo {
+  height: 3em;      /* genau so hoch wie font-size:3em */
+  width: auto;
+}
