@@ -103,20 +103,13 @@ footer {
   margin-bottom: 30px;
 }
 
-.logo-title {
-  display: flex;          /* block‑Level‑Flex, steht am Zeilenanfang */
-  align-items: center;    /* vertikal mittig */
-  gap: 0.5em;             /* feiner Abstand */
-  flex-wrap: nowrap;      /* keine Umbrüche zwischen Logo und Titel */
+header .logo-title {
+  display: flex;         /* nebeneinander */
+  align-items: center;   /* vertikal zentriert */
+  gap: 0.5em;            /* Platz zwischen Bild und Text */
 }
 
-/* Logo auf exakt dieselbe Höhe wie Dein H1 (3em) skalieren */
-.logo-title .logo {
-  height: 3em;            /* passt zur H1-Schriftgröße von 3em */
-  width: auto;            /* Seitenverhältnis beibehalten */
-}
-
-/* H1-Rand entfernen, falls noch vorhanden */
-.logo-title h1 {
-  margin: 0;
+header .logo-title .logo {
+  height: 3em !important;  /* exakt so hoch wie das H1 (3em) */
+  width: auto !important;  /* Seitenverhältnis bewahren */
 }
