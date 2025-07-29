@@ -112,7 +112,7 @@ footer {
 }
 
 .logo {
-  height: 2.5em; /* passt optisch zur h1-Größe */
+  height: auto; /* passt optisch zur h1-Größe */
   width: auto;
   display: inline-block;
 }
