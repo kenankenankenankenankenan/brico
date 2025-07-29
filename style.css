@@ -104,15 +104,19 @@ footer {
 }
 
 .logo-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: flex;          /* block‑Level‑Flex, steht am Zeilenanfang */
+  align-items: center;    /* vertikal mittig */
+  gap: 0.5em;             /* feiner Abstand */
+  flex-wrap: nowrap;      /* keine Umbrüche zwischen Logo und Titel */
 }
 
-.logo {
-  height: auto; /* passt optisch zur h1-Größe */
-  width: auto;
-  display: inline-block;
+/* Logo auf exakt dieselbe Höhe wie Dein H1 (3em) skalieren */
+.logo-title .logo {
+  height: 3em;            /* passt zur H1-Schriftgröße von 3em */
+  width: auto;            /* Seitenverhältnis beibehalten */
+}
+
+/* H1-Rand entfernen, falls noch vorhanden */
+.logo-title h1 {
+  margin: 0;
 }
