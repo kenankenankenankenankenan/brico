@@ -132,3 +132,15 @@ footer a:hover {
   margin-top: -10px;
   margin-bottom: 30px;
 }
+
+.logo-title {
+  display: flex;
+  align-items: center;      /* vertikal zentrieren */
+  gap: 0.5rem;              /* Abstand zwischen Logo und Titel */
+}
+
+/* Logo exakt so hoch wie der Titel */
+.logo {
+  height: 2.5rem;           /* passt zur h1-Font‑Size von 2.5rem */
+  width: auto;              /* Höhe steuert die Proportion, Breite skaliert automatisch */
+}
