@@ -88,11 +88,24 @@ footer {
   border-top: none;
 }
 
+/* Standard-Links im Fließtext */
+body a {
+  color: #111; /* oder #000 für tiefschwarz */
+  text-decoration: underline;
+}
+
+body a:hover {
+  color: #444; /* etwas heller beim Hover */
+}
+
+/* Links in Header & Footer weiß */
+header a,
 footer a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
+header a:hover,
 footer a:hover {
   text-decoration: underline;
 }
