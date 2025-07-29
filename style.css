@@ -88,6 +88,15 @@ footer {
   border-top: none;
 }
 
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* Hero-Bild */
 .hero img {
   width: 100%;
