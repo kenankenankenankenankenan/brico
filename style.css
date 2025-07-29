@@ -134,3 +134,16 @@ header .logo-title .logo {
   height: 3em;      /* genau so hoch wie font-size:3em */
   width: auto;
 }
+/* Logo und Titel nebeneinander */
+.logo-title {
+  display: flex;           /* Zeilen‑Layout */
+  align-items: center;     /* vertikal mittig */
+  gap: 0.5em;              /* kleiner Abstand */
+  flex-wrap: nowrap;       /* keine Umbrüche */
+}
+
+/* Logo genau so hoch wie das H1 (3em) */
+.logo-title .logo {
+  height: 3em !important;
+  width: auto !important;
+}
