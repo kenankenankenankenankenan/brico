@@ -107,12 +107,14 @@ footer {
 .logo-title {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
+  justify-content: center; /* zentriert das Ganze */
+  gap: 20px; /* Abstand zwischen Logo und Titel */
+  flex-wrap: wrap; /* falls es zu schmal wird */
 }
 
 .logo {
-  height: 50px; /* oder 40px – passe je nach Logo an */
-  width: auto;
+  height: 1em;         /* gleiche Höhe wie Schrift im <h1> */
+  width: auto;         /* behält Seitenverhältnis bei */
+  display: inline-block;
+  vertical-align: middle; /* optisch mittig zum Text */
 }
