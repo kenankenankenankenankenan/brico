@@ -1,68 +1,83 @@
+/* style.css – neue warme Version */
+
+/* Basis-Setup */
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   margin: 0;
-  background: #ffffff;
-  color: #111;
-  line-height: 1.6;
+  padding: 0;
+  font-size: 1.05rem;
+  background-color: #fff9f5; /* warmes Off-White */
+  color: #2a2a2a;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Dunkler Header */
+/* Header */
 header {
-  background: #1d1d1f;
+  background: #8b5e3c; /* warmes Braun */
+  color: #fffefc;
+  padding: 4rem 1.5rem 2.5rem;
   text-align: center;
-  padding: 60px 20px 40px 20px;
-  border-bottom: none;
 }
 
 header h1 {
   margin: 0;
-  font-size: 3em;
-  color: #ffffff;
+  font-size: 2.8rem;
 }
 
 header p {
   font-style: italic;
-  color: #ffffff;
-  margin-top: 10px;
+  margin-top: 0.5rem;
+  color: #f0eae5;
 }
 
 /* Navigation */
 nav {
-  margin-top: 20px;
+  margin-top: 1.5rem;
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 12px;
   text-decoration: none;
-  color: #ffffff;
+  color: #fffefc;
   font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  color: #0071e3; /* Apple-Blau */
+  border-bottom: 2px solid #fbd2aa; /* helles Orange */
 }
 
-/* Apple-artige Sektionen */
+/* Sektionen */
 section {
-  padding: 50px 40px;
-  box-sizing: border-box;
-  max-width: 1000px;
-  margin: 40px auto; /* weißer Rand oben und unten */
-  border-radius: 12px; /* weiche Ecken */
-  transition: all 0.3s ease;
+  padding: 60px 20px;
+  max-width: 960px;
+  margin: 0 auto 60px auto;
+  background: #fff;
+  border-left: 8px solid #fbd2aa; /* warmer Akzent */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-/* Weiß + Hellgrau im Wechsel */
-section:nth-of-type(odd) {
-  background-color: #ffffff;
+section h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #6a4029;
+  border-bottom: 2px solid #fbd2aa;
+  padding-bottom: 0.5rem;
 }
 
-section:nth-of-type(even) {
-  background-color: #f5f5f7;
+/* Einleitung zart hervorgehoben */
+.intro {
+  font-style: italic;
+  color: #7a5d4a;
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
-/* Bildergalerie */
+/* Galerie */
 .gallery, .team-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -74,42 +89,21 @@ section:nth-of-type(even) {
 .gallery img, .team-gallery img {
   width: 100%;
   max-width: 280px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Footer dunkel */
-footer {
-  text-align: center;
-  padding: 40px 20px;
-  background: #1d1d1f;
-  color: #ffffff;
-  font-size: 0.9em;
-  border-top: none;
+/* Hero-Bild */
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 6px solid #fbd2aa;
 }
 
-/* Standard-Links im Fließtext */
-body a {
-  color: #111; /* oder #000 für tiefschwarz */
-  text-decoration: underline;
-}
-
-body a:hover {
-  color: #444; /* etwas heller beim Hover */
-}
-
-/* Links in Header & Footer weiß */
-header a,
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header a:hover,
-footer a:hover {
-  text-decoration: underline;
-}
-
+/* Karte */
 .map {
   margin-top: 20px;
   border-radius: 8px;
@@ -117,30 +111,46 @@ footer a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Hero-Bild */
-.hero img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  display: block;
+/* Footer */
+footer {
+  background: #8b5e3c;
+  color: #fffefc;
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 0.9rem;
+  margin-top: 60px;
 }
 
-/* Einleitung */
-.intro {
-  font-style: italic;
-  color: #666;
-  margin-top: -10px;
-  margin-bottom: 30px;
+footer a {
+  color: #fffefc;
+  text-decoration: underline;
 }
 
-.logo-title {
-  display: flex;
-  align-items: center;      /* vertikal zentrieren */
-  gap: 0.5rem;              /* Abstand zwischen Logo und Titel */
+footer a:hover {
+  color: #fbd2aa;
 }
 
-/* Logo exakt so hoch wie der Titel */
-.logo {
-  height: 2.5rem;           /* passt zur h1-Font‑Size von 2.5rem */
-  width: auto;              /* Höhe steuert die Proportion, Breite skaliert automatisch */
+/* Links im Text */
+a {
+  color: #b25c1f;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #8a3e15;
+}
+
+/* Responsive Optimierung */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 40px 16px;
+  }
+
+  .gallery img, .team-gallery img {
+    max-width: 100%;
+  }
 }
