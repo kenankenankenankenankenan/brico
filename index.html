@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Entdecke BRICO – dein Webstudio in Bichwil für kreative Textilarbeit. Webe eigene Stoffe, lerne das Handwerk oder starte dein Webprojekt mit uns.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entdecke BRICO – dein Webstudio in Bichwil für kreative Textilarbeit." />
   <title>BRICO - Weben in Bichwil</title>
-  <link rel="icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-  
 <body>
 
-  <!-- Header mit Menü-Button + Navigation -->
   <header>
     <h1>BRICO - Weben in Bichwil</h1>
     <p>Wie sich alles zum ganzen webt, eins mit anderen wirkt und lebt. (Goethe)</p>
-
-    <!-- Mobiler Menübutton -->
     <button class="menu-toggle" aria-label="Menü umschalten">☰</button>
 
     <nav>
-      <ul>
+      <ul class="nav-main">
         <li><a href="#ueber">Über uns</a></li>
-
         <li class="has-submenu" tabindex="0">
           <a href="#ideen" data-icon="▾">Ideen</a>
           <ul>
@@ -30,7 +24,6 @@
             <li><a href="#team">Team</a></li>
           </ul>
         </li>
-
         <li><a href="#preise">Preise</a></li>
         <li><a href="#oeffnungszeiten">Öffnungszeiten</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
@@ -39,32 +32,112 @@
   </header>
 
   <div class="hero">
-    <img src="img/titelbild.png" alt="Titelbild Brico - Weben in Bichwil">
+    <img src="img/titelbild.png" alt="Titelbild Brico - Weben in Bichwil" />
   </div>
 
-  <!-- Deine <section id="ueber"> ... etc. bleibt unverändert -->
+  <main>
+
+    <section id="ueber">
+      <h2>Über uns</h2>
+      <p>Brico ist ein offenes Webstudio für alle, die das traditionelle Handwerk des Webens entdecken oder vertiefen möchten...</p>
+    </section>
+
+    <section id="ideen">
+      <h2>Ideen fürs Weben</h2>
+      <p>Ob du Anfängerin oder erfahrene Weberin bist – hier findest du inspirierende Webprojekte...</p>
+      <ul>
+        <li>Handtuch</li>
+        <li>Tischset</li>
+        <li>Saunatuch</li>
+        <li>Abwaschlappen</li>
+        <li>Wäschesack</li>
+        <li>Tischläufer</li>
+        <li>Kissen</li>
+        <li>Einkaufstaschen</li>
+        <li>Etuis, Beutel</li>
+        <li>Yogamatte</li>
+        <li>Teppich</li>
+      </ul>
+    </section>
+
+    <section id="arbeiten">
+      <h2>Unsere Arbeiten</h2>
+      <p>Unsere gewebten Stücke erzählen Geschichten – von Farben, Materialien und dem Rhythmus des Handwerks...</p>
+      <div class="gallery">
+        <img src="img/schal.png" alt="Handgewebter Schal" />
+        <img src="img/teppich.png" alt="Gewebter Teppich" />
+        <img src="img/webstuhl.png" alt="Webstuhl in Aktion" />
+      </div>
+    </section>
+
+    <section id="team">
+      <h2>Unser Team</h2>
+      <p>Hinter BRICO stehen wir: Brigitte Damdhül und Corinna Tomasi – zwei Freundinnen mit einer gemeinsamen Leidenschaft...</p>
+      <ul>
+        <li><strong>Brigitte Damdhül</strong></li>
+        <li><strong>Corinna Tomasi</strong></li>
+      </ul>
+      <div class="team-gallery">
+        <img src="img/clara.png" alt="Clara Weber" />
+        <img src="img/mara.png" alt="Mara Nyffeler" />
+      </div>
+    </section>
+
+    <section id="preise">
+      <h2>Preise</h2>
+      <ul>
+        <li>Halber Tag (4 Stunden) CHF 30.-</li>
+        <li>Einzelstunden CHF 10.-</li>
+        <li>Zusätzlich Materialkosten</li>
+        <li>Individuelle Auftragsarbeiten auf Anfrage</li>
+      </ul>
+    </section>
+
+    <section id="oeffnungszeiten">
+      <h2>Öffnungszeiten</h2>
+      <ul>
+        <li>Montag: 13:00 - 17:00 Uhr</li>
+        <li>oder nach Vereinbarung</li>
+      </ul>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>
+        BRICO<br />
+        Dorfstrasse 31b<br />
+        9248 Bichwil<br />
+        Tel: 078 640 18 74<br />
+        E-Mail: <a href="mailto:bricoweben@gmail.com">bricoweben@gmail.com</a>
+      </p>
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12..." 
+          width="100%" height="300" style="border:0;" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <p>&copy; 2025 BRICO – Alle Rechte vorbehalten |
       <a href="impressum.html">Impressum</a> |
-      <a href="datenschutz.html">Datenschutz</a></p>
+      <a href="datenschutz.html">Datenschutz</a>
+    </p>
   </footer>
 
-  <!-- JavaScript für Menü, Dropdown, ScrollSpy -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const toggle = document.querySelector('.menu-toggle');
-      const menu = document.querySelector('nav ul');
+      const menu = document.querySelector('ul.nav-main');
 
-      // Menü öffnen/schließen mobil
-      toggle.addEventListener('click', (e) => {
+      toggle.addEventListener('click', e => {
         e.stopPropagation();
         menu.classList.toggle('active');
         document.body.classList.toggle('menu-open');
       });
 
-      // Klick außerhalb schließt alles
-      document.addEventListener('click', (e) => {
+      document.addEventListener('click', e => {
         if (!menu.contains(e.target)) {
           menu.classList.remove('active');
           document.body.classList.remove('menu-open');
@@ -72,23 +145,21 @@
         }
       });
 
-      // Dropdown-Klickverhalten
       document.querySelectorAll('nav .has-submenu > a').forEach(link => {
-        link.addEventListener('click', (e) => {
+        link.addEventListener('click', e => {
           e.preventDefault();
           const parent = link.closest('li');
           parent.classList.toggle('show');
         });
       });
 
-      // ScrollSpy für aktiven Link
       const links = document.querySelectorAll('nav a[href^=\"#\"]');
       const sections = Array.from(links).map(link => document.querySelector(link.getAttribute('href')));
 
       window.addEventListener('scroll', () => {
         const scrollPos = window.scrollY + 100;
         sections.forEach((section, index) => {
-          if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
+          if (section && section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
             links.forEach(link => link.classList.remove('active'));
             links[index].classList.add('active');
           }
@@ -96,6 +167,5 @@
       });
     });
   </script>
-
 </body>
 </html>
