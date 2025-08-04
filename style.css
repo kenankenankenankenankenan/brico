@@ -56,7 +56,6 @@ section {
   max-width: 960px;
   margin: 0 auto 60px auto;
   background: #fff;
-  border-left: 8px solid #fbd2aa; /* warmer Akzent */
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
