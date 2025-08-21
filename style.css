@@ -40,14 +40,14 @@ nav {
 nav a {
   margin: 0 12px;
   text-decoration: none;
-  color: #fffefc;
+  color: #2a2a2a;
   font-weight: 500;
   border-bottom: 2px solid transparent;
   transition: border 0.3s ease;
 }
 
 nav a:hover {
-  border-bottom: 2px solid #fbd2aa; /* helles Orange */
+  border-bottom: 2px solid #2a2a2a; /* helles Orange */
 }
 
 /* Sektionen */
@@ -63,8 +63,7 @@ section {
 section h2 {
   margin-top: 0;
   font-size: 2rem;
-  color: #6a4029;
-  border-bottom: 2px solid #fbd2aa;
+  color: #2a2a2a;
   padding-bottom: 0.5rem;
 }
 
@@ -124,12 +123,12 @@ footer {
 }
 
 footer a {
-  color: #fffefc;
+  color: #2a2a2a;
   text-decoration: underline;
 }
 
 footer a:hover {
-  color: #fbd2aa;
+  color: #2a2a2a;
 }
 
 /* Links im Text */
