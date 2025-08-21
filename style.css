@@ -123,22 +123,22 @@ footer {
 }
 
 footer a {
-  color: #2a2a2a;
+  color: #fffefc;
   text-decoration: underline;
 }
 
 footer a:hover {
-  color: #2a2a2a;
+  color: #fffefc;
 }
 
 /* Links im Text */
 a {
-  color: #b25c1f;
+  color: #fffefc;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #8a3e15;
+  color: #fffefc;
 }
 
 /* Responsive Optimierung */
