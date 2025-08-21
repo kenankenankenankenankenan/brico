@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.05rem;
-  background-color: #fff9f5; /* warmes Off-White */
+  background-color: #e6e6e9; /* apple grau */
   color: #2a2a2a;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-  background: #8b5e3c; /* warmes Braun */
+  background: #1d1d1f; /* apple schwarz */
   color: #fffefc;
   padding: 4rem 1.5rem 2.5rem;
   text-align: center;
@@ -115,7 +115,7 @@ section h2 {
 
 /* Footer */
 footer {
-  background: #8b5e3c;
+  background: #1d1d1f; /* apple schwarz */
   color: #fffefc;
   text-align: center;
   padding: 3rem 1rem;
