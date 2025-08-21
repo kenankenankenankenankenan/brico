@@ -47,7 +47,7 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom: 2px solid #2a2a2a; /* helles Orange */
+  border-bottom: 2px solid #2a2a2a; 
 }
 
 /* Sektionen */
@@ -133,12 +133,12 @@ footer a:hover {
 
 /* Links im Text */
 a {
-  color: #fffefc;
+  color: #2a2a2a;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #fffefc;
+  color: #2a2a2a;
 }
 
 /* Responsive Optimierung */
