@@ -91,20 +91,3 @@ footer {
   display: block;
 }
 
-.intro {
-  font-style: italic;
-  color: #666;
-  margin-top: -10px;
-  margin-bottom: 30px;
-}
-
-.logo-title {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo {
-  height: 2.5rem;
-  width: auto;
-}
